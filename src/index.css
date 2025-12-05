@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+}
+.posts-page {
+  width: 100%;
+}
+
+.posts-title {
+  margin-bottom: 1.5rem;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
