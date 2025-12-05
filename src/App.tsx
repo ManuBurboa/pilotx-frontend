@@ -20,38 +20,44 @@ const App = () => {
         bgcolor: "#f3f4f6",
       }}
     >
-      <AppBar
-        position="fixed"
-        sx={{
-          bgcolor: "#111827",
-          boxShadow: 2,
-        }}
+    <AppBar
+      position="fixed"
+      sx={{
+        bgcolor: "#111827",
+        boxShadow: 2,
+      }}
       >
-        <Toolbar>
-          <Typography
-            variant="h6"
-            component={Link}
-            to="/"
-            sx={{
-              flexGrow: 1,
-              textDecoration: "none",
-              color: "inherit",
-              fontWeight: 600,
-            }}
-          >
-            PilotX Posts
-          </Typography>
-
-          <Button
-            color="inherit"
-            component={Link}
-            to="/"
-            sx={{ fontWeight: 500 }}
-          >
-            Home
-          </Button>
+      <Toolbar
+        sx={{
+          display: "flex",
+          justifyContent: "center", 
+          alignItems: "center",
+          gap: 3,                    
+        }}
+        >
+        <Typography
+          variant="h6"
+          component={Link}
+          to="/"
+          sx={{
+            textDecoration: "none",
+            color: "inherit",
+            fontWeight: 600,
+          }}
+        >
+          PilotX Posts
+        </Typography>
+        <Button
+          size="medium"
+          color="inherit"
+          component={Link}
+          to="/"
+          sx={{ opacity: 0.8, "&:hover": { opacity: 1 } }}
+        >
+          Inicio
+        </Button>
         </Toolbar>
-      </AppBar>
+    </AppBar>
       <Toolbar />
       <Container
         maxWidth="lg"

@@ -1,6 +1,12 @@
 *{
     margin: 0;
 }
+html {
+  scrollbar-gutter: stable;
+}
+body {
+  overflow-y: scroll;
+}
 .posts-page {
   width: 100%;
 }
