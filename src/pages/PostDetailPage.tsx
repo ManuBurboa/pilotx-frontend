@@ -1,4 +1,3 @@
-// src/pages/PostDetailPage.tsx
 import { useEffect, useState, type FormEvent } from "react";
 import { useParams } from "react-router-dom";
 import type { Post, Comment } from "../types/posts";
